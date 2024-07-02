@@ -1,0 +1,32 @@
+h1{text-align: center; color: goldenrod; text-decoration: double;}
+main{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container{
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .c-layer{
+      overflow: hidden; /* important */
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .c-layer-2 {
+      width: 50%;
+  }
+  
+  .image {
+    margin:0;
+    padding:0;
+    width: 200px; /* same as container*/
+    height:100%;
+  }

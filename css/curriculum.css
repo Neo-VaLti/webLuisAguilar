@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'alumni';
+    src: url(../fonts/AlumniSans-bold.ttf) format('truetype');
+    /* Puedes agregar más formatos (woff, woff2, etc.) si los tienes */
+  }
+.container{display: flex;}
+.izquierda{
+    font-family: 'alumni', sans-serif;
+    background-color: rgb(10, 108, 117);
+    border: 2px solid rgba(216, 185, 10, 0.651);
+    width: 20%;
+   height: auto;
+   margin-left: auto;
+   font-size: 1.5em;
+}
+.derecha{
+    font-family: 'alumni', sans-serif;
+    width: 80%;
+height: auto;
+margin-top: 20px;
+
+}
+.titulo h1, .titulo h2, .acerca, .experiencia,.Educacion,.hard-skills,.soft-skills{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.foto{
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 2px solid black; /* Borde negro de 2 píxeles */
+    height: auto;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   
+}
+.izquierda h2 {
+    font-size: 1.2em;
+    margin: 10px;
+    color: white;
+}
+.izquierda h3 {
+    font-size: .7em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+.izquierda li{
+    color: white;
+}
+h2{text-transform: uppercase;}
+
+.titulo{background-color: rgb(97,84,87);
+    border: 2px solid rgba(241, 85, 46, 0.527); /* Borde negro de 2 píxeles */
+   width: auto;
+color: aliceblue;}
+
+.redes-sociales{
+   
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.redes-sociales a i {
+    margin-right: 10px;
+    color: rgb(165, 252, 244);
+    background-color: black;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 33px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    transition: color 0.3s, background-color 0.3s; /* Agrega una transición suave */
+}
+
+.redes-sociales a i:hover {
+    color: white; /* Cambia el color al pasar el mouse sobre el icono */
+    background-color: teal; /* Cambia el fondo al pasar el mouse sobre el icono */
+}
+
+.redes-sociales a i:active {
+    color: rgb(129, 202, 107); /* Cambia el color al hacer clic en el icono */
+    background-color: rgb(255, 255, 255); /* Cambia el fondo al hacer clic en el icono */
+}
+
+
+
+
+@media only screen and (max-width: 1150px) {
+    .container{display:block;}
+    .izquierda{
+        width: auto;
+    }
+    .derecha{
+        width: auto;
+    }
+}

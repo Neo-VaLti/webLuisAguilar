@@ -1,0 +1,62 @@
+/* Documento css*/
+*{margin: 0px; padding: 0px;}
+@font-face {
+    font-family: 'chak';
+    src: url(../fonts/chakrapetch-mediumitalic-webfont.woff) format('woff');
+    /* Puedes agregar más formatos (woff, woff2, etc.) si los tienes */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Cross-Boxed';
+    src: url(../fonts/Cross\ Boxed.ttf) format('truetype');
+    /* Puedes agregar más formatos (woff, woff2, etc.) si los tienes */
+}
+body{font-family: 'chak', sans-serif; margin: 40px;}
+h2{text-align: center; width: 250px; margin: 20px auto; padding: 15px; border: 2px solid rebeccapurple ; border-radius: 100px; text-transform: uppercase;}
+.cabecera{width: 100%;
+padding: 20px 0px;}
+h1{padding-bottom: 15px;font-size: 2.5em;}
+.container{width: 100%;display: flex; flex-wrap: wrap;padding: 0px 15px; box-sizing: border-box;}
+.principal{}
+.item{width: 100%;margin-bottom: 16px;}
+.pie{}
+.item span{font-size: .9em; }
+.item input{width: 100%; height: 40px;margin-bottom: 15px;box-sizing: border-box; border-radius: 8px;border: aliceblue;  
+}
+.item input::placeholder{font-style: italic;color: darkorchid;text-decoration: underline;}
+.item textarea{max-width: 100%;min-width: 100%; height:20px ; !important}
+.boton:active{
+    background-color: goldenrod;
+    color:darkviolet;
+}
+.boton:hover{color: white; background: rgb(158,60,147);
+    background: linear-gradient(90deg, rgba(158,60,147,1) 0%, rgba(121,9,94,1) 44%, rgba(7,84,21,1) 87%);}
+
+    /*Media queries codigos para pantallas de 600px en adelante movile fisrt*/
+    @media only screen and (min-width:588px){
+h1{font-size: 4.3em;}
+.item p{font-size: 2em;margin-bottom: 25px;}
+body{font-size: larger;}
+
+    }
+
+    /*pantallas mayores a 992*/
+    @media only screen and (min-width:993px){
+        h1{font-size: 2.5em; padding-bottom: 30px;}
+.item p{font-size: 1.5em; }
+.container{
+    width: 80%;
+    margin: auto;
+}
+.item{
+    width: 50%;
+    
+}
+body{background-color: darkgreen}
+.formulario{width: 50%; margin: auto;}
+
+    }
+    @media only screen and (min-width:1280px){
+.container{display: flex;}
+    }

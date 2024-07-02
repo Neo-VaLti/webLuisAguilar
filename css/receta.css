@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'recetas';
+    src: url(../fonts/recetas.ttf) format('truetype');
+    /* Puedes agregar más formatos (woff, woff2, etc.) si los tienes */
+  }
+
+  h1{
+    font-family: recetas;
+    background-color: #dba9a99c;
+    text-align: center;
+    border-radius: 20px;
+    width:auto;
+    margin-left: 20%;
+    margin-right: 20%;
+  } 
+  h3{
+    text-align: center;
+  }
+  
+.Ingredientes {
+    border-radius: 20px;
+    background-color: rgba(158, 83, 34, 0.973);
+    border: white;
+    width: 20%;
+    overflow-y: scroll; /* Habilita la barra de desplazamiento vertical */
+    height: 100vh; /* Ajusta la altura del div */
+    position: sticky; /* Mantiene el div visible al desplazarse */
+    top: 0; /* Posición desde la parte superior de la página */
+ }
+ .Proceso {
+    border: white;
+    background-color: rgba(168, 243, 48, 0.897);
+    border-radius: 20px;
+    width: 70%;
+ }
+ .container {
+   display: flex;
+  
+   width: 100%;
+   
+ }
+ div{margin: 50px;}
+main{
+    
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+ body{
+    background-image: repeating-conic-gradient(#ee2020 0% 25%, #fbecec 0% 50%);
+background-position: 0 0, 10px 10px;
+background-size: 20px 20px;
+background-color: #fbecec;
+font-size: 16;
+font-weight: bold;
+ }
+ img {
+    width: 300px; /* Cambia esto al ancho deseado */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+  }
+  dl dt,
+  dl dd {
+    padding-bottom: 5px; /* Ajusta el valor según necesites */
+  
+}
+dl dt{text-align: center;
+color: rgb(221, 206, 67);}
+dl dd{color: rgb(247, 163, 104);}
+  .sci-fi-footer {
+    background-color: #0a0f0d; /* Un color oscuro para el fondo */
+    color: #c5c6c7; /* Un color claro para el texto */
+    padding: 20px;
+    font-family: 'Orbitron', sans-serif; /* Una tipografía moderna y sci-fi */
+  }
+  
+  .footer-content p,
+  .footer-content ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+  }
+  
+  .footer-content li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content a {
+    color: #9bf0e1; /* Un color que resalte sobre el fondo oscuro */
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  /* Estilo para el label cuando la casilla está marcada */
+input[type="checkbox"]:checked + label {
+  color: #ff00bf; /* Cambia el color del texto aquí */
+}

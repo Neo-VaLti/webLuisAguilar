@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Blankenburg';
+  src: url(../fonts/Blankenburg.ttf) format('truetype');
+  /* Puedes agregar más formatos (woff, woff2, etc.) si los tienes */
+}
+@font-face {
+  font-family: 'SakuraKei';
+  src: url(../fonts/SakuraKei.ttf) format('truetype');
+  /* Puedes agregar más formatos (woff, woff2, etc.) si los tienes */
+}
+@font-face {
+  font-family: 'OhCanada';
+  src: url(../fonts/OhCanada.ttf) format('truetype');
+  /* Puedes agregar más formatos (woff, woff2, etc.) si los tienes */
+}
+.image-container{
+    background-color: rgba(106, 166, 168, 0.3);
+    height: 190px;
+    border-radius: 10px; /* Redondea las esquinas */
+    display: flex;
+  align-items: stretch;
+  object-fit: cover;
+}
+.container {
+    display: flex;
+  }
+  h1{
+    text-align: center;
+    font-size: 3em;
+    color: palevioletred;
+    background: #bd96b9;
+    border-radius: 999px;
+    margin: 20px;
+  }
+
+  body{
+background-color: black;
+    margin: 30px;
+    font-weight: bold;
+    color: #ffffff;   
+
+      font-size: 16px; /* Tamaño de fuente base */
+      line-height: 1.2; /* Altura de línea para mejorar la legibilidad */
+ 
+  }
+  
+  main {
+    flex: 1;
+  }
+  .flex-container {
+    display: flex;
+    
+  }
+  img.dobleimg{
+    height: 21px;
+    width: 50%;  
+}
+  .imagen{
+    height: auto;
+  width: 90%;   
+  
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #ffffff; /* Borde blanco para destacar la imagen */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+  border-radius: 20px;
+}
+.doble{ height: auto;
+    width: 50%;  
+    border: 2px solid #ffffff; /* Borde blanco para destacar la imagen */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+  border-radius: 10px;}
+  
+    
+.Canada{
+  font-family: 'OhCanada', sans-serif;
+  font-size: 2.3em;    background: linear-gradient(181deg, rgba(220,48,44,1) 70%, rgba(255,255,255,1) 20%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  
+}
+.divcanada{
+ 
+  font-size: 1.2em;
+  margin: 0;
+}
+.Alemania{
+  font-family: 'Blankenburg', sans-serif;
+  font-size: 3.3em;
+  background: linear-gradient(6deg, rgba(221,0,0,1) 0%, rgba(255,255,255,1) 47%, rgba(0,0,0,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+.divalemania{
+  font-size: 1.2em;
+}
+.Japon{
+  font-family: 'SakuraKei', sans-serif;
+  font-size: 5.3em;
+  color: palevioletred;
+  font-weight: bold;
+  margin: 0;
+}
+.divjapon{
+  font-size: 1.2em;
+}
+:root {
+  --spacing: 16px;
+}
+
+.container, .image-container {
+  margin: var(--spacing);
+  box-shadow: 0px 4px 8px rgb(255, 255, 255); /* Soft shadow for depth */
+
+}
+.imagen:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+@media (max-width: 768px) {
+  .imagen {
+    width: 80%; /* Ajusta el ancho en dispositivos más pequeños */
+  }
+}
+body {
+  background-color: #000000;
+opacity: 1;
+background-image: radial-gradient(#6a00b6 0.65px, #000000 0.65px);
+background-size: 13px 13px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo sólido para el contenido */
+  padding: 20px; /* Espaciado alrededor del contenido */
+}
+.sci-fi-footer {
+  background-color: #0a0f0d; /* Un color oscuro para el fondo */
+  color: #c5c6c7; /* Un color claro para el texto */
+  padding: 20px;
+  font-family: 'Orbitron', sans-serif; /* Una tipografía moderna y sci-fi */
+}
+
+.footer-content p,
+.footer-content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content ul {
+  list-style-type: none;
+}
+
+.footer-content li {
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: #9bf0e1; /* Un color que resalte sobre el fondo oscuro */
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+h1,H2{
+  text-transform: uppercase;
+}
+
+:root {
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}
+
+.container, .image-container {
+  margin: var(--spacing-medium);
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+  }
+}
+a:hover, a:focus {
+  color: #ffcc00; /* Cambia el color al pasar el ratón o enfocar */
+}

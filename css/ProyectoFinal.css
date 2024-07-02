@@ -1,0 +1,251 @@
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /* Fondo negro */
+    color: white; /* Color de fuente blanco */
+    padding: 10px; /* Espaciado */
+}
+
+/* Estilos para el logo */
+.logo {
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Estilos para el título */
+.titulo {
+    margin-right: auto; /* Alinear a la izquierda */
+}
+
+
+.menu {
+margin-right: 0px;
+}
+
+/* Estilos para los elementos del menú (suponiendo que son elementos <a>) */
+.menu a {
+    margin-right: 20px; /* Espacio entre los elementos del menú */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: white; /* Color de fuente blanco */
+}
+
+
+
+
+/**--------------------------galeria imagenes------------------*/
+
+/**
+/**primera galeria**/
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+      /* Elimina la siguiente línea para permitir el desplazamiento horizontal */
+    /* overflow: hidden; */
+}
+
+.mi-galeria {
+    display: flex;
+    width: calc(100vw * 3); /* Adjust based on the number of images */
+    transition: transform 0.5s ease-in-out;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory; /* Snap to each image */
+}
+
+
+.mi-galeria img {
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    scroll-snap-align: start; /* Align images to the start */
+
+}
+
+.flecha-izquierda, .flecha-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.flecha-izquierda {
+    left: 10px;
+}
+
+.flecha-derecha {
+    right: 10px;
+}
+.hidden-image {
+    display: none;
+}
+
+/**--------------------------estilos para la segunda galeria--------------------*/
+
+
+.contenedor-galeria {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.galeria {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.contenedor-imagen {
+    
+    position: relative;
+    
+    width: 100%;
+    border-radius: 55px;
+    height: 270px;
+    background-color: #efefef;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.contenedor-imagen img {
+    
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor-imagen:hover {
+    
+    flex: 2;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.Ofertas{
+    height: 350px;
+    align-items: center;
+}
+
+/* reseñas */
+.user-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #f1c40f;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-reviews {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-reviews h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-reviews .review {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-reviews .review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-reviews .stars {
+    color: #f1c40f;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+header{
+    background-color: #9362cc;
+    margin: 0 ;
+}
+body{background-color: purple;}
+.container{display: flex;
+}
+.index a{
+    text-align: right;
+}
+
+header  .menu a{  
+    margin:20px 20px 20px 50px;
+}
+
+
+
+
+
+/**
+/**primera galeria**/
+/* styles.css */
+
+
+
+
+body {
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+h2{
+    text-align: center;
+}
