@@ -1,4 +1,11 @@
-/* Estilos para el contenedor principal */
+*
+{
+    padding:0;
+    margin: 0;
+}
+
+
+/*--------------------- Estilos para el Menu-----------------------------*/
 .container {
     display: flex;
     justify-content: space-between;
@@ -10,14 +17,26 @@
 
 /* Estilos para el logo */
 .logo {
+    width: 10%;
+    height: 10%;
     margin-right: 10px; /* Espacio entre el logo y el título */
 }
 
 /* Estilos para el título */
 .titulo {
+    display: flex;
     margin-right: auto; /* Alinear a la izquierda */
+    font-family: "Arial", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
+.titulo h1
+{   /* Este apartado baja el titulo "Blockbooster"*/
+    position: relative; 
+    top: 15px;
+}
 
 .menu {
 margin-right: 0px;
@@ -30,7 +49,10 @@ margin-right: 0px;
     color: white; /* Color de fuente blanco */
 }
 
-
+.menu a:hover
+{
+    color: rgb(196, 199, 37);
+}
 
 
 /**--------------------------galeria imagenes------------------*/
@@ -40,6 +62,16 @@ margin-right: 0px;
 /* styles.css */
 
 body, html {
+
+    /*
+    Fuente 
+    <weight>: Use a value from 200 to 700
+    */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
     margin: 0;
     padding: 0;
     height: 100%;
@@ -53,14 +85,17 @@ body, html {
     transition: transform 0.5s ease-in-out;
     overflow-x: hidden;
     scroll-snap-type: x mandatory; /* Snap to each image */
+  
+    
 }
 
 
 .mi-galeria img {
     width: 100vw;
-    height: 500px;
+    height: 700px;
     object-fit: cover;
     scroll-snap-align: start; /* Align images to the start */
+    
 
 }
 
@@ -86,8 +121,114 @@ body, html {
     display: none;
 }
 
-/**--------------------------estilos para la segunda galeria--------------------*/
+/**--------------------------Quienes somos------------------*/
 
+.quienSomos
+{   
+    display: flex;
+    width: 100%;
+    margin: 100px 0px 100px 0px;
+}
+
+.qsCol1
+{
+    width: 50%;
+    padding: 0px 20px 0 50px;
+    text-align: justify;
+    position: relative;
+    top: 100px;
+}
+
+.qsCol1 h2
+{
+    font-size: 50px;
+}
+
+.qsCol2
+{
+    width: 50%;
+    padding: 0px 20px 0 20px ;
+    position: relative;
+    bottom: 50px;
+}
+
+.qsImg
+{
+    width: 100%;
+}
+
+/**--------------------------Visión Empresarial------------------*/
+
+
+.visEmp
+{
+    width: 100%;
+    margin: 100px 0px 100px 0px;
+    padding: 50px 0px;
+    background-image: url(https://cdn.wallpapersafari.com/67/89/7zmYOV.png);
+    background-size: 100%;
+}
+
+.visEmpTitulo
+{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.visEmpCol
+{
+    display: flex;
+    padding: 0px 50px 0px 50px;
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.visEmpCol h2
+{   
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    
+}
+
+.veCol1
+{
+    width: 33%;
+    padding: 0px 50px 100px 50px;
+    background-color: #2222226e;
+    margin: 10px 10px;
+}
+.veCol2
+{
+    width: 33%;
+    padding: 0px 50px 100px 50px;
+    background-color: #2222226e;
+    margin: 10px 10px;
+}
+.veCol3
+{
+    width: 33%;
+    padding: 0px 50px 100px 50px;
+    background-color: #2222226e;
+    margin: 10px 10px;
+}
+
+/**--------------------------estilos para la Ofertas segunda galeria--------------------*/
+
+.Ofertas
+{
+    margin: 100px 0px;
+    padding: 0px 30px;
+}
+
+.Ofertas h2
+{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 50px 0px;
+}
 
 .contenedor-galeria {
     display: grid;
@@ -133,119 +274,136 @@ body, html {
     height: 350px;
     align-items: center;
 }
+/*---------------Comentarios----------------------------------------*/
 
-/* reseñas */
-.user-reviews {
-    display: flex;
+
+
+.contact-form
+{
+    width: 100%;
+    display: flex; 
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    padding: 50px 100px; 
+    box-sizing: border-box;
+    
+
 }
 
-.review {
-    background-color: #fff;
+.formTitulo
+{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.formTitulo h2
+{
+    font-size: 50px;
+    text-align: center; 
+}
+
+.formTitulo span
+{
+    font-size: .9em; 
+}
+
+
+
+.itemFormulario input
+{
+    width: 100%; 
+    height: 40px;
+    margin-bottom: 15px;
+    box-sizing: border-box; 
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: yellow;  
+}
+
+.itemFormulario input::placeholder
+{
+    font-style: italic;
+    
+}
+
+.itemFormulario textarea
+{
+    max-width: 100%;
+    min-width: 100%; 
+    height:20px !important;
+}
+
+.btn
+{
+    background-color: goldenrod;
+    color: white;
+}
+
+.btn:hover
+{
+    color: white; 
+    background: black;
+}
+
+/*----------------- Estilos para la sección de contacto------------------------ */
+.contacto 
+{   
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    
+}
+
+.contacto h2
+{
+    padding: 20px 0px; 
+}
+
+.contacto a
+{   
+    color: white;
+}
+
+.contacto a:hover
+{   
+    color: rgb(196, 199, 37);
+}
+
+.contactCol
+{
+    display: flex;
+    
+}
+
+.cCol1
+{
+    padding: 0px 20px;
+    
+}
+.cCol2
+{
+    padding: 0px 20px; 
+   
+}
+.cCol3
+{
+    padding: 0px 20px; 
+}
+.cCol4
+{
+    padding: 0px 20px;
+}
+
+.social-icons
+{   
+    padding: 10px 0px;
+    min-height: 1px;
+}
+
+.items{
+    font-size: 2em;
+    width: 50%;
     text-align: center;
-}
-
-.review img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.stars {
-    color: #f1c40f;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.user-reviews {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.user-reviews h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.user-reviews .review {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.user-reviews .review img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.user-reviews .stars {
-    color: #f1c40f;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Estilos para la sección de contacto */
-.contact-section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.contact-section p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #555;
-}
-header{
-    background-color: #9362cc;
-    margin: 0 ;
-}
-body{background-color: purple;}
-.container{display: flex;
-}
-.index a{
-    text-align: right;
-}
-
-header  .menu a{  
-    margin:20px 20px 20px 50px;
-}
+    margin: 0px 5px;
+       }
 
 
-
-
-
-/**
-/**primera galeria**/
-/* styles.css */
-
-
-
-
-body {
-    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
-}
-h2{
-    text-align: center;
-}
